@@ -1,14 +1,7 @@
-0x04. Loops, conditions and parsing
-DevOpsShellBashScripting
 
-    By: Sylvain Kalache
-    Weight: 1
-    Ongoing second chance project - started Nov 23, 2023 6:00 AM, must end by Nov 28, 2023 6:00 AM
-    An auto review will be launched at the deadline
+    Share your public key in your answer file 0-RSA_public_key.pub
+    Fill the SSH public key field of your intranet profile with the public key you just generated
+    Keep the private key to yourself in a secure location, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects
+    If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase
 
-In a nutshell…
-
-    Auto QA review: 0.0/83 mandatory & 0.0/30 optional
-    Altogether:  0.0%
-        Mandatory: 0.0%
-        Optional: 0.0%
+SSH and RSA keys will be covered in depth in a later project.
