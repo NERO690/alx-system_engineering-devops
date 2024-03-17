@@ -1,11 +1,9 @@
-# Fix problem of high amount files opened
-
-exec {'replace-1':
-  provider => shell,
-  command  => 'sudo sed -i "s/nofile 5/nofile 50000/" /etc/security/limits.conf',
-  before   => Exec['replace-2'],
+# OS configuration so it is possible to login with holberton user
+exec { 'hard limit':
+  command => "sed -i 's/5/4000/' /etc/security/limits.conf",
+  path    => '/bin'
 }
-
-exec {'replace-2':
-  provider => shell,
-  command  => 'sudo sed -i "s/nofile 4/nofile 40000/" /etc/security/limits.conf',
+exec { 'soft limit':
+  command => "sed -i 's/4/2000/' /etc/security/limits.conf",
+  path    => '/bin'
+}
